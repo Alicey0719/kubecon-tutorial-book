@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: kubecon-tutorial-book
 repo: github.com/Alicey0719/kubecon-tutorial-book
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: k8s.alicey.dev
+  group: webapp
+  kind: Guestbook
+  path: github.com/Alicey0719/kubecon-tutorial-book/api/v1
+  version: v1
 version: "3"
